@@ -1,0 +1,22 @@
+---
+import { Image } from "astro:assets";
+import CandidateImage from "@/assets/images/El-Candidato.webp";
+import styles from "@/styles/index.module.css";
+---
+
+<div class="row justify-content-center mt-3">
+  <div class={`col-12 col-md-8 col-lg-6 ${styles.contWidth}`}>
+    <div class={`${styles.imgContainer}`}>
+      <Image
+        src={CandidateImage}
+        alt="Jorge Bonica"
+        class={`${styles.imgFluid} rounded-5`}
+      />
+      <h1 class={`${styles.textOverlay}`}>Jorge Bonica</h1>
+      <h1 class={`${styles.secondTextOverlay}`}>Presidente</h1>
+      <a href="/candidate" class={`${styles.btnStyle} shadow-lg mt-2`}
+        >Conocé a Jorge</a
+      >
+    </div>
+  </div>
+</div>

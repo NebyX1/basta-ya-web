@@ -1,0 +1,19 @@
+---
+import Main from "@/layouts/MainLayout.astro";
+import CallToAction from "@/components/home/CallToAction.astro";
+import CandidateBanner from "@/components/home/CandidateBanner.astro";
+import IdeasSlider from "@/components/home/IdeasSlider";
+import IdeasBanner from "@/components/home/IdeasBanner.astro";
+import Participate from "@/components/home/Participate.astro";
+---
+
+<Main>
+  <title slot="title">Basta YA!</title>
+  <div class="container text-center">
+    <CandidateBanner />
+    <CallToAction />
+    <Participate />
+    <IdeasSlider client:load />
+    <IdeasBanner />
+  </div>
+</Main>

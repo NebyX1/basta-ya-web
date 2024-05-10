@@ -1,0 +1,27 @@
+---
+import { Image } from "astro:assets";
+import ParticipateImage from "@/assets/images/Participate.webp";
+import WhatsAppLogo from "@/assets/images/WhatsAppLogo.png";
+import styles from "@/styles/index.module.css";
+---
+
+<div class="row justify-content-center mt-3">
+  <div class={`col-12 col-md-8 col-lg-6 ${styles.contWidth}`}>
+    <div class={`${styles.imgContainer}`}>
+      <Image
+        src={ParticipateImage}
+        alt="Whatsapp image"
+        class={`${styles.imgFluid} rounded-5`}
+      />
+      <h1 class={`${styles.textPart1}`}>Participá!</h1>
+      <h4 class={`${styles.textPart2} mt-1 mb-1`}>Envianos un Whatsapp</h4>
+      <a href="https://web.whatsapp.com/" class={`${styles.wpLogo}`}
+        >
+        <Image
+          src={WhatsAppLogo}
+          alt="Whatsapp icon"
+          class={`${styles.imgFluid} me-2`} />
+        </a>
+    </div>
+  </div>
+</div>

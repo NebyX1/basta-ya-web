@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "Lovelo";
+  src: url("../assets/fonts/Lovelo-Black.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.imgSize {
+  width: 200px;
+  height: 200px;
+}
+
+.footerBG {
+  background-color: #5f7acd;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.footerLink {
+  font-family: "Lovelo", sans-serif;
+  font-size: 0.8rem !important;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 1rem;
+  text-decoration: none !important;
+  font-size: large;
+  transition: all 0.3s ease;
+}
+
+.footerLink:hover {
+  color: #ecbd3d;
+}
+
+.rrssIcon {
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 1.5rem;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.rrssIcon:hover {
+  transform: scale(1.05);
+  color: #ecbd3d;
+}

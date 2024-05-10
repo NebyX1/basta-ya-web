@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'Lovelo';
+    src: url('../assets/fonts/Lovelo-Black.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.navBox {
+    background-color: #ffffff;
+    border-bottom: 1px solid #5f7acd;
+    border-left: none;
+    border-right: none;
+    min-height: 80px;
+}
+
+.navLogo {
+    height: 60px;
+    width: auto;
+    transition: all 0.3s ease;
+}
+
+.navLogo:hover {
+    transform: rotate(2deg);
+}
+
+.nvLink {
+    font-family: 'Lovelo', sans-serif;
+    font-size: 1.5rem;
+    color: #5f7acd;
+    text-decoration: none;
+    margin: 0 1rem;
+    text-decoration: none !important;
+    font-size: large;
+    transition: all 0.3s ease;
+}
+
+.nvLink:hover {
+    transform: scale(1.05);
+    color: #ecbd3d;
+}

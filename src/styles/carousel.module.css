@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'Lovelo';
+    src: url('../assets/fonts/Lovelo-Black.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.carouselContainer{
+    min-height: 100%;
+}
+
+.imgCarousel{
+    width: 115%;
+    height: 115%;
+    object-fit:cover;
+}
+
+.imgCarousel:hover{
+    transform: scale(1.02);
+    transition: transform 0.5s;
+}
+
+.titleTxt{
+    font-family: 'Lovelo', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #5f7acd;
+}
+
+/* For tablets: */
+@media only screen and (max-width: 768px) {
+    .imgCarousel {
+        width: 130%;
+        height: 130%;
+    }
+    .titleTxt{
+        font-size: 2rem;
+    }
+}
+
+/* For mobile phones: */
+@media only screen and (max-width: 480px) {
+    .imgCarousel {
+        width: 140%;
+        height: 140%;
+    }
+    .titleTxt{
+        font-size: 1.5rem;
+    }
+}

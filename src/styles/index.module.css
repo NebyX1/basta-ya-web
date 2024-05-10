@@ -1,0 +1,226 @@
+@font-face {
+    font-family: 'Lovelo';
+    src: url('../assets/fonts/Lovelo-Black.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+.contWidth {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.imgContainer {
+    position: relative;
+    text-align: center;
+}
+
+.textOverlay {
+    position: absolute;
+    top: 35%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    color: #ecbd3d;
+    font-size: 3.5rem;
+    font-family: 'Lovelo';
+}
+
+.secondTextOverlay{
+    position: absolute;
+    top: 45%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3.5rem;
+    font-family: 'Lovelo';
+}
+
+.btnStyle {
+    position: absolute;
+    top: 55%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    background-color: #ecbd3d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-family: 'Lovelo';
+    cursor: pointer;
+}
+
+.btnStyle:hover {
+    background-color: #c2ee5a;
+}
+
+.imgFluid {
+    width: 100%;
+    height: auto;
+}
+
+.textPart1 {
+    position: absolute;
+    top: 35%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 2.0rem;
+    font-family: 'Lovelo';
+}
+
+.textPart2{
+    position: absolute;
+    top: 45%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Lovelo';
+}
+
+.wpLogo {
+    position: absolute;
+    top: 50%;
+    left: 58%;
+    border: none;
+    padding: 10px 20px;
+    display: inline-block;
+    cursor: pointer;
+    height: 20vh;
+    width: 20vh;
+    transition: all 0.3s;
+}
+
+.wpLogo:hover {
+    transform: scale(1.04);
+    
+}
+
+/* Estilos para pantallas muy grandes (desktops) */
+@media (min-width: 1400px) {
+    .textOverlay {
+        font-size: 3.5rem;
+    }
+    .secondTextOverlay {
+        font-size: 3.5rem;
+    }
+    .btnStyle {
+        font-size: 1.5rem;
+    }
+    .textPart1 {
+        font-size: 1.6rem;
+    }
+    .textPart2 {
+        font-size: 1.2rem;
+    }
+}
+
+/* Estilos para pantallas grandes (laptops) */
+@media (min-width: 992px) {
+    .textOverlay {
+        font-size: 2.5rem;
+    }
+    .secondTextOverlay {
+        font-size: 2.5rem;
+    }
+    .btnStyle {
+        font-size: 1.5rem;
+    }
+    .textPart1 {
+        font-size: 2.0rem;
+    }
+    .textPart2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Estilos para pantallas medianas (tablets, 768px y más) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .textOverlay {
+        font-size: 1.5rem;
+    }
+    .secondTextOverlay {
+        font-size: 1.5rem;
+    }
+    .btnStyle {
+        font-size: 0.8rem;
+        height: 5vh;
+        width: 18vh;
+    }
+    .textPart1 {
+        font-size: 1.2rem;
+    }
+    .textPart2 {
+        font-size: 0.8rem;
+    }
+}
+
+/* Estilos para pantallas pequeñas (landscape phones, 576px y más) */
+@media (max-width: 767px) {
+    .textOverlay {
+        font-size: 0.9rem;
+    }
+    .secondTextOverlay {
+        font-size: 0.9rem;
+    }
+    .btnStyle {
+        font-size: 0.45rem;
+        height: 4.5vh;
+        width: 16vh;
+    }
+    .textPart1 {
+        font-size: 0.8rem;
+    }
+    .textPart2 {
+        font-size: 0.6rem;
+    }
+    .wpLogo {
+        height: 15vh;
+        width: 15vh;
+    }
+}
+
+/* Estilos para pantallas extra pequeñas (portrait phones, menos de 576px) */
+@media (max-width: 575px) {
+    .textOverlay {
+        font-size: 0.8rem;
+    }
+    .secondTextOverlay {
+        font-size: 0.8rem;
+    }
+    .btnStyle {
+        font-size: 0.7rem;
+        height: 5vh;
+        width: 16vh;
+    }
+    .textPart1 {
+        font-size: 0.8rem;
+    }
+    .textPart2 {
+        font-size: 0.6rem;
+    }
+    .wpLogo {
+        height: 12vh;
+        width: 12vh;
+    }
+}
+
+/* Estilos para pantallas extra pequeñas (entre 375px y 420px) */
+@media (min-width: 300px) and (max-width: 410px) {
+    .textOverlay {
+        font-size: 0.6rem;
+    }
+    .secondTextOverlay {
+        font-size: 0.7rem;
+    }
+    .btnStyle {
+        font-size: 0.5rem;
+        height: 5vh;
+        width: 19vh;
+    }
+}

@@ -1,0 +1,22 @@
+---
+import { Image } from "astro:assets";
+import BannerImage from "@/assets/images/IdeasBanner.webp";
+import styles from "@/styles/ideasbanner.module.css";
+---
+
+<div class="row justify-content-center mt-3">
+  <div class={`col-12 col-md-8 col-lg-6 ${styles.contWidth}`}>
+    <div class={`${styles.imgContainer}`}>
+      <Image
+        src={BannerImage}
+        alt="Jorge Bonica"
+        class={`${styles.imgFluid} rounded-5`}
+      />
+      <h1 class={`${styles.textOverlay}`}>Las Mejores Ideas</h1>
+      <h1 class={`${styles.secondTextOverlay}`}>El mejor Uruguay</h1>
+      <a href="/ideas" class={`${styles.btnStyle} shadow-lg mt-2`}
+        >Descargar</a
+      >
+    </div>
+  </div>
+</div>

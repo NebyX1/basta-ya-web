@@ -1,0 +1,36 @@
+.hdDiv {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: 50px;
+  background-color: #ecbd3d;
+  transition: all 0.5s ease;
+}
+
+.hdDiv:hover {
+  background-color: #5f7acd;
+}
+
+.rrssIcon {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 15px;
+  width: 35px;
+  height: 35px;
+  font-size: 1.2rem;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.rrssIcon:hover {
+  transform: scale(1.05);
+  color: #ecbd3d;
+}
+
+@media (max-width: 768px) {
+    .hdDiv {
+      display: none;
+    }
+  }

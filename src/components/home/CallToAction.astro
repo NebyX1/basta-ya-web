@@ -1,0 +1,15 @@
+---
+import { Image } from "astro:assets";
+import CallToActionImage from "@/assets/images/CallToAction.webp";
+import styles from "@/styles/index.module.css";
+---
+
+<div class="row justify-content-center mt-3">
+  <div class={`col-12 col-md-8 col-lg-6 ${styles.contWidth}`}>
+    <Image
+      src={CallToActionImage}
+      alt="Carta Negra a la corrupción"
+      class={`${styles.imgFluid} rounded-5`}
+    />
+  </div>
+</div>
