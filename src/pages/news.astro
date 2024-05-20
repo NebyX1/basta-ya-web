@@ -1,12 +1,15 @@
 ---
+import InstagramFeed from "@/components/common/InstagramFeed";
 import Main from "@/layouts/MainLayout.astro";
-
 ---
 
 <Main>
   <title slot="title">Basta YA! | Novedades</title>
-  <div class="p-5">
-	<h1 class="text-3xl font-bold">Novedades</h1>
-	<p class="mt-5">This is the news page.</p>
+  <div class="p-5 text-center">
+    <h1 class="text-3xl font-bold">Novedades</h1>
+    <p class="mt-5">Sigue nuestro feed de Instragram para estar al día</p>
+    <div class="d-flex justify-content-center mt-5">
+      <InstagramFeed client:load />
+    </div>
   </div>
 </Main>

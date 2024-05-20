@@ -194,9 +194,9 @@
         font-size: 0.8rem;
     }
     .btnStyle {
-        font-size: 0.7rem;
-        height: 5vh;
-        width: 16vh;
+        font-size: 0.5rem;
+        height: 4vh;
+        width: 13vh;
     }
     .textPart1 {
         font-size: 0.8rem;
@@ -210,8 +210,8 @@
     }
 }
 
-/* Estilos para pantallas extra pequeñas (entre 375px y 420px) */
-@media (min-width: 300px) and (max-width: 410px) {
+/* Estilos para pantallas extra pequeñas (entre 376px y 300px) */
+@media (min-width: 300px) and (max-width: 376px) {
     .textOverlay {
         font-size: 0.6rem;
     }
@@ -219,8 +219,8 @@
         font-size: 0.7rem;
     }
     .btnStyle {
-        font-size: 0.5rem;
+        font-size: 0.4rem;
         height: 5vh;
-        width: 19vh;
+        width: 13vh;
     }
 }

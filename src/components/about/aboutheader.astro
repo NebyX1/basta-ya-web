@@ -1,0 +1,17 @@
+---
+import { Image } from "astro:assets";
+import AboutBanner from "@/assets/images/aboutbanner.webp";
+import styles from "@/styles/about.module.css";
+---
+
+<div class="row justify-content-center mt-1">
+  <div class="col-12">
+    <div class={styles.imgcontainer}>
+      <Image
+        src={AboutBanner}
+        alt="Somos Basta YA!"
+        class={`${styles.imgfluid}`}
+      />
+    </div>
+  </div>
+</div>

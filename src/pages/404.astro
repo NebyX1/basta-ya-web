@@ -1,0 +1,19 @@
+---
+import Main from "@/layouts/MainLayout.astro";
+import { Image } from "astro:assets";
+import ErrorImage from "@/assets/images/404.webp";
+import styles from "@/styles/error.module.css";
+---
+
+<Main>
+  <title slot="title">Basta YA! | 404</title>
+  <div class="p-5 text-center">
+    <Image
+    src={ErrorImage}
+    alt="Imagen de Not Found"
+    class={`${styles.errorImage}`}
+  />
+<h4 class="mt-4">Parece que no hemos podido encontrar la página que está buscando</h4>
+<a href="/" class="mt-4 btn btn-primary">Ir a la página Principal</a>
+  </div>
+</Main>

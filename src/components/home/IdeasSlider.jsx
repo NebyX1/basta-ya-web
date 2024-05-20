@@ -1,6 +1,8 @@
-import React from "react"; // Asegúrate de importar React
+import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css"; // Importa los estilos de Swiper
+import { Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
 
 // Importa los estilos del componente
 import styles from "@/styles/carousel.module.css";
@@ -20,15 +22,29 @@ import Slide11 from "@/assets/images/ideas/11.webp";
 import Slide12 from "@/assets/images/ideas/12.webp";
 
 export default function ImageCarousel() {
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
+
   return (
     <>
-    <div className="mt-5">
+      <div className="mt-5">
         <h2 className={`${styles.titleTxt}`}>Conocé Nuestras Ideas</h2>
-    </div>
+      </div>
       <Swiper
         className={`rounded-5 mt-1 mb-5 ${styles.carouselContainer}`}
         spaceBetween={50}
         slidesPerView={2}
+        navigation={{
+          prevEl: prevRef.current,
+          nextEl: nextRef.current,
+        }}
+        onInit={(swiper) => {
+          swiper.params.navigation.prevEl = prevRef.current;
+          swiper.params.navigation.nextEl = nextRef.current;
+          swiper.navigation.init();
+          swiper.navigation.update();
+        }}
+        modules={[Navigation]}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
       >
@@ -116,6 +132,8 @@ export default function ImageCarousel() {
             className={`${styles.imgCarousel}`}
           />
         </SwiperSlide>
+        <div className="swiper-button-next" ref={nextRef} style={{ color: 'white' }}></div>
+        <div className="swiper-button-prev" ref={prevRef} style={{ color: 'white' }}></div>
       </Swiper>
     </>
   );

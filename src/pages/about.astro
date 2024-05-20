@@ -1,12 +1,75 @@
 ---
 import Main from "@/layouts/MainLayout.astro";
-
+import Aboutheader from "@/components/about/aboutheader.astro";
 ---
 
 <Main>
   <title slot="title">Basta YA! | Sobre Nosotros</title>
-  <div class="p-5">
-	<h1 class="text-3xl font-bold">About</h1>
-	<p class="mt-5">This is the about page.</p>
+  <Aboutheader />
+  <div class="p-2 text-center bg-light mt-4">
+    <h1 class="display-5">¿Quiénes somos?</h1>
+    <section class="mt-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+            <p class="lead">
+              En el Partido Basta YA!, creemos firmemente que la política debe
+              ser una herramienta para mejorar la vida de todos.
+              Desafortunadamente, hemos visto cómo la inoperancia y la
+              corrupción nos han afectado una y otra vez. Por eso, queremos
+              compartir con ustedes nuestros principios y valores, que son la
+              base de nuestras propuestas y nuestra gestión.
+            </p>
+            <h3 class="mt-4">Eje Ideológico: Libertad e Igualdad en Armonía</h3>
+            <p class="mb-4">
+              A menudo, se presenta la libertad y la igualdad como opuestos,
+              pero en el Partido Basta YA! creemos que deben ir de la mano.
+              Queremos un Uruguay donde cada persona pueda vivir plenamente, con
+              un Estado que apoye sin sofocar la iniciativa individual. Nuestra
+              meta es equilibrar la libertad individual con la igualdad de
+              oportunidades para todos.
+            </p>
+            <h3 class="mt-4">
+              Valores Fundamentales: Honestidad, Transparencia y Compromiso
+              Moral
+            </h3>
+            <h4 class="mt-3">Honestidad</h4>
+            <p>
+              Nos comprometemos a ser sinceros con ustedes. No prometemos lo que
+              no podemos cumplir. La confianza se gana con integridad y
+              coherencia entre lo que decimos y hacemos.
+            </p>
+            <h4 class="mt-3">Transparencia</h4>
+            <p>
+              Creemos en la claridad y apertura de las actividades
+              gubernamentales. Implementaremos sistemas para que la información
+              del gobierno sea accesible y comprensible, permitiendo a cada
+              ciudadano evaluar nuestras decisiones. La transparencia no solo
+              mejora la gestión pública, sino que también combate la corrupción.
+            </p>
+            <h4 class="mt-3">Compromiso Moral</h4>
+            <p>
+              Luchar contra la corrupción es una prioridad. Vemos la corrupción
+              como un obstáculo para el desarrollo y el bienestar de nuestra
+              nación. Adoptaremos las mejores prácticas internacionales para
+              garantizar un gobierno libre de corrupción.
+            </p>
+            <p class="mt-4">
+              Además de estos pilares, nos enfocaremos en fortalecer la
+              educación, la salud, la seguridad y la economía, con especial
+              atención a la innovación y la sostenibilidad. Queremos que Uruguay
+              no solo enfrente los desafíos actuales, sino que también esté
+              preparado para el futuro.
+            </p>
+            <p class="mt-4">
+              Esperamos contar con su apoyo en este camino hacia un Uruguay más
+              justo, transparente y próspero. Creemos que juntos podemos
+              transformar nuestra sociedad y asegurar un bienestar duradero para
+              todos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </Main>
