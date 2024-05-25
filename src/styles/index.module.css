@@ -19,7 +19,7 @@
 .textOverlay {
     position: absolute;
     top: 35%;
-    left: 65%;
+    left: 35%;
     transform: translate(-50%, -50%);
     color: #ecbd3d;
     font-size: 3.5rem;
@@ -29,7 +29,7 @@
 .secondTextOverlay {
     position: absolute;
     top: 45%;
-    left: 65%;
+    left: 35%;
     transform: translate(-50%, -50%);
     color: white;
     font-size: 3.5rem;
@@ -39,7 +39,7 @@
 .btnStyle {
     position: absolute;
     top: 55%;
-    left: 65%;
+    left: 35%;
     transform: translate(-50%, -50%);
     background-color: #ecbd3d;
     color: white;
